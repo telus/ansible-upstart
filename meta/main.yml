@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - role: colstrom.logrotate
+  - role: telusdigital.logrotate
     logrotate_name: upstart
 galaxy_info:
   author: "Chris Olstrom"
