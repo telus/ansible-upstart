@@ -27,13 +27,13 @@ Tunables
 
 Dependencies
 ------------
-* [colstrom.logrotate](https://github.com/colstrom/ansible-logrotate/)
+* [telusdigital.logrotate](https://github.com/telusdigital/ansible-logrotate/)
 
 Example Playbook
 ----------------
     - hosts: servers
       roles:
-         - role: colstrom.upstart
+         - role: telusdigital.upstart
            upstart_name: nginx
            upstart_user: www-data
            upstart_start_on:
