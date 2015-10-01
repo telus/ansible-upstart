@@ -35,7 +35,7 @@ Example Playbook
       roles:
          - role: telusdigital.upstart
            upstart_name: nginx
-           upstart_description: "Nginx"
+           upstart_description: "Upstart for Nginx HTTP Server"
 
 License
 -------
