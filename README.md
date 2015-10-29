@@ -52,4 +52,3 @@ Contributors
 * Aaron Pederson
 * Justin Scott
 * Steven Harradine
-
