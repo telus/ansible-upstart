@@ -19,6 +19,10 @@ Tunables
 * `upstart_pre_start` (list) - Commands to run prior to starting
 * `upstart_post_stop` (list) - Commands to run after stopping
 * `upstart_script` (list) - Script to run
+* `upstart_respawn` (boolean) - Should you respawn process on accidental shutdown?
+* `upstart_respawn_limit` (boolean) - Limit respawning the process up to $count times within an $interval second interval?
+* `upstart_respawn_limit_count` (integer) - upstart_respawn_limit $count mentioned above 
+* `upstart_respawn_limit_interval` (integer) - upstart_respawn_limit $interval mentioned above 
 * `upstart_exec_path` (string) - A single command to execute
 * `upstart_exec_flags` (list) - Parameters to be passed to the command
 * `upstart_log_root` (string) - Directory for logs
