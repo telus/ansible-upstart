@@ -19,6 +19,12 @@ upstart_pre_start: no
 upstart_post_stop: no
 upstart_script: no
 
+upstart_respawn: no
+
+upstart_respawn_limit: no
+upstart_respawn_limit_count: 10 
+upstart_respawn_limit_interval: 5
+
 upstart_exec_path: 'echo Nothing defined to execute'
 upstart_exec_flags: no
 

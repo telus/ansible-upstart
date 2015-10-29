@@ -2,6 +2,7 @@
 
 [Upstart](http://upstart.ubuntu.com/) is an event-based replacement for the /sbin/init daemon which handles starting of tasks and services during boot, stopping them during shutdown and supervising them while the system is running.
 
+[![Build Status](https://travis-ci.org/telusdigital/ansible-php.svg?branch=travis)](https://travis-ci.org/telusdigital/ansible-php)
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
 Tunables
@@ -19,6 +20,10 @@ Tunables
 * `upstart_pre_start` (list) - Commands to run prior to starting
 * `upstart_post_stop` (list) - Commands to run after stopping
 * `upstart_script` (list) - Script to run
+* `upstart_respawn` (boolean) - Should you respawn process on accidental shutdown?
+* `upstart_respawn_limit` (boolean) - Limit respawning the process up to $count times within an $interval second interval?
+* `upstart_respawn_limit_count` (integer) - upstart_respawn_limit $count mentioned above 
+* `upstart_respawn_limit_interval` (integer) - upstart_respawn_limit $interval mentioned above 
 * `upstart_exec_path` (string) - A single command to execute
 * `upstart_exec_flags` (list) - Parameters to be passed to the command
 * `upstart_log_root` (string) - Directory for logs
