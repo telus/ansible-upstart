@@ -18,6 +18,14 @@ start on {{ event }}
 stop on {{ event }}
 {% endfor %}
 
+{% if upstart_respawn %}
+respawn
+{% endif %}
+
+{% if upstart_respawn_limit %}
+respawn limit {{ upstart_respawn_limit_count }} {{ upstart_respawn_limit_interval }}
+{% endif %}
+
 {% if upstart_file_descriptor_limit %}
 limit nofile {{ upstart_file_descriptor_limit }} {{ upstart_file_descriptor_limit }}
 {% endif %}
