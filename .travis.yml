@@ -11,7 +11,7 @@ before_install:
 
 install:
   # install ansible
-  - pip install ansible
+  - sudo pip install ansible
 
   # configure ansible
   - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
