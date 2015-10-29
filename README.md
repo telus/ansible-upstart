@@ -2,7 +2,7 @@
 
 [Upstart](http://upstart.ubuntu.com/) is an event-based replacement for the /sbin/init daemon which handles starting of tasks and services during boot, stopping them during shutdown and supervising them while the system is running.
 
-[![Build Status](https://travis-ci.org/telusdigital/ansible-upstart.svg?branch=travis)](https://travis-ci.org/telusdigital/ansible-upstart)
+[![Build Status](https://travis-ci.org/telusdigital/ansible-upstart.svg?branch=master)](https://travis-ci.org/telusdigital/ansible-upstart)
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
 Tunables
