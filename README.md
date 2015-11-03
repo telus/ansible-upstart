@@ -17,6 +17,7 @@ Tunables
 * `upstart_stop_on` (list):  - Events to stop on
 * `upstart_file_descriptor_limit` (integer) - File descriptor limit for the process
 * `upstart_environment` (list) - Environment data
+* `upstart_environment_global` (boolean) - Should env vars be global to all upstart scripts? 
 * `upstart_pre_start` (list) - Commands to run prior to starting
 * `upstart_post_stop` (list) - Commands to run after stopping
 * `upstart_script` (list) - Script to run
