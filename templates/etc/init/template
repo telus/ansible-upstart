@@ -6,7 +6,7 @@ description "{{ upstart_description }}"
 
 {% if upstart_environment is iterable %}
 {%   for environment_variable in upstart_environment %}
-export {{ environment_variable.name }}={{ environment_variable.value }}
+{% if upstart_environment_global %}export{% else %}env{% endif %} {{ environment_variable.name }}={{ environment_variable.value }}
 {%   endfor %}
 {% endif %}
 
