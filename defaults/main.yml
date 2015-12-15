@@ -3,7 +3,7 @@ upstart_runtime_root: "{{ runtime_root | default('/var/run') }}/{{ upstart_name 
 upstart_pidfile_path: "{{ upstart_runtime_root }}/{{ upstart_name }}.pid"
 
 upstart_user: nobody
-upstart_group: nobody
+upstart_group: nogroup
 
 upstart_name: template
 upstart_description: 'Nondescript Template'
