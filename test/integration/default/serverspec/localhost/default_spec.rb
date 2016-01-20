@@ -6,7 +6,7 @@ describe 'ansible-upstart::default' do
     it { should be_file }
   end
 
-  describe file('/etc/init.d/template.conf') do
+  describe file('/etc/init/template.conf') do
     it { should be_file }
   end
 
