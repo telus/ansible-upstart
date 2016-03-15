@@ -1,0 +1,10 @@
+---
+# host to test against
+- hosts: test-kitchen
+  remote_user: root
+
+  roles:
+    # name of role to test
+    - role: ansible-upstart
+    - role: ansible-upstart
+      state: absent
