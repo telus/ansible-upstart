@@ -2,6 +2,7 @@
 dependencies:
   - role: telusdigital.logrotate
     logrotate_name: upstart
+    when: upstart_use_logrotate == "yes"
 galaxy_info:
   author: "Chris Olstrom"
   company: "TELUS digital"

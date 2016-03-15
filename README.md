@@ -30,10 +30,11 @@ Tunables
 * `upstart_log_root` (string) - Directory for logs
 * `upstart_log_path` (string) - Path for log file
 * `upstart_capture_errors` (boolean) - Redirect STDERR to STDOUT?
+* `upstart_use_logrotate` (boolean) - Depend on [telusdigital.logrotate](https://github.com/telusdigital/ansible-logrotate/)
 
 Dependencies
 ------------
-* [telusdigital.logrotate](https://github.com/telusdigital/ansible-logrotate/)
+* [telusdigital.logrotate](https://github.com/telusdigital/ansible-logrotate/) (optional, see `upstart_use_logrotate`)
 
 Example Playbook
 ----------------
