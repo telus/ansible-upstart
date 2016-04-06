@@ -34,4 +34,4 @@ upstart_log_path: "{{ upstart_log_root }}/{{ upstart_name }}.log"
 
 upstart_capture_errors: yes
 
-state: present
+upstart_state: present

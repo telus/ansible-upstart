@@ -1,6 +1,6 @@
 ---
 - include: install.yml
-  when: state == "present"
+  when: upstart_state == "present"
 
 - include: remove.yml
-  when: state == "absent"
+  when: upstart_state == "absent"

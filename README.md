@@ -30,7 +30,7 @@ Tunables
 * `upstart_log_root` (string) - Directory for logs
 * `upstart_log_path` (string) - Path for log file
 * `upstart_capture_errors` (boolean) - Redirect STDERR to STDOUT?
-* `state` (present|absent) - Install or remove init script
+* `upstart_state` (present|absent) - Install or remove init script
 
 Dependencies
 ------------
