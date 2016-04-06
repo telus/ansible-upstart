@@ -2,6 +2,7 @@
 
 [Upstart](http://upstart.ubuntu.com/) is an event-based replacement for the /sbin/init daemon which handles starting of tasks and services during boot, stopping them during shutdown and supervising them while the system is running.
 
+[![Licence](https://img.shields.io/badge/Licence-MIT-blue.svg)](https://tldrlegal.com/license/mit-license)
 [![Build Status](https://travis-ci.org/telusdigital/ansible-upstart.svg?branch=master)](https://travis-ci.org/telusdigital/ansible-upstart)
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
@@ -43,10 +44,6 @@ Example Playbook
          - role: telusdigital.upstart
            upstart_name: nginx
            upstart_description: "Upstart for Nginx HTTP Server"
-
-License
--------
-[MIT](https://tldrlegal.com/license/mit-license)
 
 Contributors
 ------------
