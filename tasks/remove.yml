@@ -1,0 +1,14 @@
+---
+- name: "Uninstall Upstart Script config from /etc/init.d/{{ upstart_name }}"
+  file:
+    state: absent
+    dest: "/etc/init/{{ upstart_name }}.conf"
+  tags:
+    - upstart
+
+- name: "Uninstall Upstart Script from /etc/init.d/{{ upstart_name }}"
+  file:
+    state: absent
+    dest: "/etc/init.d/{{ upstart_name }}"
+  tags:
+    - upstart
