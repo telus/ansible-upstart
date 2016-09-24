@@ -44,6 +44,7 @@ end script
 
 {% if upstart_script is iterable %}
 script
+  touch {{upstart_pidfile_path}}
 {%   for command in upstart_script %}
   {{ command }}
 {%   endfor %}
