@@ -52,6 +52,15 @@ end script
 exec start-stop-daemon --start --chuid {{ upstart_user }} --group {{ upstart_group }} --make-pidfile --pidfile {{ upstart_pidfile_path }} --exec {{ upstart_exec_path }}{{ ' -- '~upstart_exec_flags|join(' ') if upstart_exec_flags else '' }} {{ '2>&1' if upstart_capture_errors else '' }} >> {{ upstart_log_path }}
 {% endif %}
 
+{% if upstart_pre_stop is iterable %}
+pre-stop script
+{%   for command in upstart_pre_stop %}
+  {{ command }}
+{%   endfor %}
+end script
+{% endif %}
+
+
 post-stop script
   rm {{ upstart_pidfile_path }}
 {% if upstart_post_stop is iterable %}
