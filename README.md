@@ -20,6 +20,7 @@ Tunables
 * `upstart_environment` (list) - Environment data
 * `upstart_environment_global` (boolean) - Should env vars be global to all upstart scripts? 
 * `upstart_pre_start` (list) - Commands to run prior to starting
+* `upstart_pre_stop` (list) - Commands to run before stopping (useful for docker)
 * `upstart_post_stop` (list) - Commands to run after stopping
 * `upstart_script` (list) - Script to run
 * `upstart_respawn` (boolean) - Should you respawn process on accidental shutdown?
@@ -52,3 +53,4 @@ Contributors
 * Aaron Pederson
 * Justin Scott
 * Steven Harradine
+* Ryan Mills

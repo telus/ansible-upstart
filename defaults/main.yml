@@ -18,6 +18,7 @@ upstart_environment: no
 upstart_environment_global: yes
 upstart_pre_start: no
 upstart_post_stop: no
+upstart_pre_stop: no
 upstart_script: no
 
 upstart_respawn: no
